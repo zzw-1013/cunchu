@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/num_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入学号"
+            android:layout_gravity="center"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入姓名"
+            android:layout_gravity="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="将数据存储到文件中" />
+        <Button
+            android:id="@+id/btn_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="从文件中读数据" />
+        <TextView
+            android:id="@+id/tv_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:hint="显示文件中的数据"
+            android:textSize="24sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact"
+            android:text="显示通讯录中所有的联系人姓名"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
